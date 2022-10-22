@@ -10,3 +10,6 @@ if (!$conn) {
   die('Could not connect to MariaDB!: ' . mysqli_connect_error());
 }
 echo 'Connected to MariaDB!';
+
+mysqli_close($conn)
+?>
