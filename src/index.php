@@ -11,6 +11,10 @@
   <form action="./test/conn.php" method="post">
     <input type="submit" name="conntest" value="Connection Test" />
   </form>
+  <form action="./db/create-db.php" method="post">
+    <input type="text" name="db-name"><br>
+    <input type="submit" name="create-db-test" value="Create Database Test" />
+  </form>
 </body>
 
 </html>
