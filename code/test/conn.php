@@ -1,13 +1,12 @@
 <?php
-// Basic connection settings
-$databaseHost = "172.22.0.2";
+
+$databaseHost = 'db';
 $databaseUsername = 'root';
 $databasePassword = 'example';
 
-// Connect to the database
-$enlace = mysqli_connect($databaseHost, $databaseUsername, $databasePassword);
+$conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword);
 
-if (!$enlace) {
-  die('Could not connect to database!: ' . mysqli_connect_error());
+if (!$conn) {
+  die('Could not connect to MariaDB!: ' . mysqli_connect_error());
 }
-echo 'Connected to database!';
+echo 'Connected to MariaDB!';
