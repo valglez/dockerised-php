@@ -5,7 +5,7 @@ services:
         image: mariadb
         restart: always
         environment:
-            MARIADB_ROOT_PASSWORD: $S_PASS
+            MARIADB_ROOT_PASSWORD: example
     web:
         container_name: web    
         image: nginx
